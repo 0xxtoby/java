@@ -18,6 +18,7 @@ public class User {
     public User(int id, String name, String pwd) {
         this.id = id;
         this.name = name;
+        this.pwd=pwd;
 
     }
 
