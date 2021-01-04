@@ -9,6 +9,7 @@ public class ExpDemo {
         Scanner c =new Scanner(System.in);
         AccountMgr accountMgr=new AccountMgr();
         while (true) {
+            System.out.println("-----------------");
             System.out.println("请输入命令：1注册  2登录  3查看全部用户  0拜拜");
             String cmd = c.nextLine();
             System.out.println(cmd);
