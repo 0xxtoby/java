@@ -1,10 +1,20 @@
 package sy3.no6;
 
+import java.util.Arrays;
+
 public class SingleQuestion2 extends Question{
-    char anwswer;
+    String anwswer;
+
+    public SingleQuestion2(String anwswer,String title,String[] options) {
+        this.anwswer = anwswer;
+        this.setOptions(options);
+        this.setTitle(title);
+    }
+
+
 
     @Override
-    protected boolean check(char answers) {
-        return super.check(answers);
+    protected boolean check(String[] answers) {
+        return answers[0].equals(anwswer);
     }
 }

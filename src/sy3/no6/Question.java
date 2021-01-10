@@ -3,7 +3,7 @@ package sy3.no6;
 import java.io.ObjectInputStream;
 import java.util.Arrays;
 
-public  class  Question {
+public abstract class  Question {
     String title;
     String[] options=new String[5];
 
@@ -24,10 +24,10 @@ public  class  Question {
     }
 
     protected  void print(){
+        System.out.println(title);
         System.out.println(Arrays.toString(options));
+        System.out.println("你的答案是：");
     };
 
-    protected boolean check(char answers) {
-        return false;
-    }
+    protected abstract boolean check(String[] answers);
 }
