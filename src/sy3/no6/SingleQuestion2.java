@@ -11,7 +11,13 @@ public class SingleQuestion2 extends Question{
         this.setTitle(title);
     }
 
+    public String getAnwswer() {
+        return anwswer;
+    }
 
+    public void setAnwswer(String anwswer) {
+        this.anwswer = anwswer;
+    }
 
     @Override
     protected boolean check(String[] answers) {

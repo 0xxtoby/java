@@ -11,7 +11,13 @@ public class MulitQuestion2  extends Question{
         this.setTitle(title);
     }
 
+    public String[] getAnswer() {
+        return answer;
+    }
 
+    public void setAnswer(String[] answer) {
+        this.answer = answer;
+    }
 
     @Override
     protected boolean check(String[] answers) {

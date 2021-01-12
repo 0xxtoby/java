@@ -47,6 +47,8 @@ public class QuestionDemo {
 
         int i=0;
         int sum=0;
+        System.out.println("开始期末考试\n-----------------------\n任意键继续。。。。。。。。。");
+        scanner.nextLine();
         while (true){
             System.out.println("\n");
             System.out.println("----------"+(i+1)+"-----------");
